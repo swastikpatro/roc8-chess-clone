@@ -1,3 +1,4 @@
+import shortid from 'shortid';
 import useChessBoard from '../Hooks/useChessBoard';
 import { GRID_LENGTH } from '../utils';
 import Row from './Row';
@@ -10,7 +11,7 @@ const ChessBoard = () => {
         {Array.from({ length: GRID_LENGTH }, (_, rowIndex) => (
           <Row
             activeSquare={activeSquare}
-            key={rowIndex}
+            key={shortid.generate()}
             rowIndex={rowIndex}
             isFirstSquareBlack={!!(rowIndex % 2)}
           />

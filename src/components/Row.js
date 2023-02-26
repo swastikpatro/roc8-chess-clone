@@ -1,5 +1,6 @@
 import { GRID_LENGTH, calculateKnightPositions } from '../utils';
 import Square from './Square';
+import shortid from 'shortid';
 
 const Row = ({ isFirstSquareBlack, rowIndex, activeSquare }) => {
   return (
@@ -27,7 +28,7 @@ const Row = ({ isFirstSquareBlack, rowIndex, activeSquare }) => {
         return (
           <Square
             activeSquare={activeSquare}
-            key={columnIndex}
+            key={shortid.generate()}
             isSquareBlack={isSquareBlack}
             column={columnIndex}
             row={rowIndex}
