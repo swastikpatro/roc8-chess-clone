@@ -353,7 +353,7 @@ nav {
 .chess-board {
   border: 10px solid var(--grey-500);
   height: fit-content;
-  width: 90vw;
+  width: 98vw;
   max-width: 35rem;
   border-radius: var(--borderRadius);
 }
