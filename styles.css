@@ -356,6 +356,8 @@ nav {
   width: 98vw;
   max-width: 35rem;
   border-radius: var(--borderRadius);
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
 }
 
 .row {
@@ -366,6 +368,7 @@ nav {
 }
 
 .square {
+  width: 100%;
   cursor: pointer;
   display: flex;
   justify-content: center;
