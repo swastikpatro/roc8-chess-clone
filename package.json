@@ -1,7 +1,7 @@
 {
   "name": "roc8-chess-clone",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a chess app where you can check knight positions",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
